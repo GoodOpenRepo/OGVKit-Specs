@@ -36,7 +36,8 @@ Pod::Spec.new do |s|
   #                   :sha1 => sha1 }
 
   # This is pre-patched git fork.
-  s.source = { :git => "https://github.com/brion/ogg.git" }
+  s.source = { :git => "https://github.com/brion/ogg.git",
+               :tag => "1.3.3-ios" }
 
   s.prepare_command = <<-'CMD'
                       echo 'framework module ogg {' > ogg.modulemap
